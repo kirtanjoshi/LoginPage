@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login_page.css">
+    <script src="https://kit.fontawesome.com/b05f218eee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="login-section login">
+            <div class="message flex">
+                <div class="login-message flex">
+                    <h1>Hello, Friends!</h1>
+                    <div id="text">
+                        <p>Enter your personal details and start</p>
+                        <p>journery with us </p>
+                    </div>
+                    <div>
+                        <button onclick="toggleModes()" class="transparent">
+                            <p style="font-weight: 600; color: white;">Singup</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="singup-message flex">
+                    <h1>Welcome,Back</h1>
+                    <div id="text">
+                        <p>To keep connected with us please login</p>
+                        <p>with your personal </p>
+                    </div>
+                    <div>
+                        <button onclick="toggleModes()" class="transparent">
+                            <p style="font-weight: 600; color: white;">Signin</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form flex">
+                <div class="login-form flex">
+                    <h1 style="color: black;">SIGN IN</h1>
+                    <div class="wrapper">
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span>Twitter</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>Github</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <span>YouTube</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 10px;font-weight: 200;">or use your account</p>
+                    </div>
+                    <div>
+                        <form action="email-page">
+                            <input type="email" id="Email" placeholder="Email"><br>
+                            <input type="password" id="Password" placeholder="Password">
+                        </form>
+                    </div>
+                    <div id="Forget-Password">
+                        <p style=" margin-top: 20px;font-size: 10x; color: rgb(177, 174, 174);">Forget your password?
+                        </p>
+                    </div>
+                    <div>
+                        <button id="Signup-button">
+                            <p style="font-weight: 600; color: white;">Signin</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="singup-form  flex">
+
+                    <h1 style="color: black;">Create Account</h1>
+
+                    <div class="wrapper">
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span>Twitter</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>Github</span>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <span>YouTube</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 10px;font-weight: 200;">or use your email for registration</p>
+                    </div>
+                    <div id="form">
+                        <form action="email-page">
+                            <input type="text" id="Email" value="Name"><br>
+                            <input type="email" id="Password" placeholder="Email"><br>
+                            <input type="password" id="Password" placeholder="Password">
+                        </form>
+                    </div>
+                    <div>
+                        <button id="Signin-button">
+                            <p style="font-weight: 600; color: white;">Signup</p>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+<script type="text/javascript">
+    const toggleModes = () => {
+        document.querySelector(".login-section").classList.toggle("login");
+        document.querySelector(".login-section").classList.toggle("signup");
+    };
+</script>
+
+</html>
